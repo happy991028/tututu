@@ -1,0 +1,41 @@
+div {
+    width: 300px;
+    height: 440px;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    margin: 30px auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-indent: 4em;
+    margin-top: 0;
+    color: red;
+    font-size: 12px;
+    width: 250px;
+    height: 15px;
+}
+
+button {
+    display: block;
+    width: 260px;
+    height: 30px;
+    margin: 10px auto;
+    color: white;
+    background-color: pink;
+    border-radius: 10px;
+}

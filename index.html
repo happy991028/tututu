@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/9.9.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="left"><img src="./image/logo.png" alt="" width="75px" height="75px"></div>
+            <div class="word">
+                <h3>&nbsp; 熊猫优选</h3>
+                <p>
+                    XIONG MAO YOU XUAN
+                </p>
+            </div>
+            <div class="middle"><img src="./image/放大镜.png" alt="" width="20px" height="20px"><input type="text"
+                    placeholder="搜索商品，发现更多优惠" ;><button type="button">搜索</button></div>
+            <div class="right"><span><img src="./image/two.png" alt="" width="40px" height="40px">
+                    <p>全程包邮</p>
+                </span><span><img width="40px" height="40px" src="./image/three.png" alt="">
+                    <p>七天退换</p>
+                </span><span><img width="40px" height="40px" src="./image/one.png" alt="">
+                    <p>品质保证</p>
+                </span></div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>首页</li>
+                <li>9块9包邮</li>
+                <li>超值大额卷</li>
+                <li>降温急救穿搭</li>
+            </ul>
+        </div>
+    </nav>
+    <hgroup>
+        <div class="container">
+            <h3>9块9专区</h3>
+        </div>
+    </hgroup>
+    <menu>
+        <div class="container">
+            <ul>
+                <li>精选</li>
+                <li>美妆护肤</li>
+                <li>美妆护肤</li>
+                <li>服装配饰</li>
+                <li>手机数码</li>
+                <li>日用家居</li>
+                <li>文娱体育</li>
+                <li>文娱体育</li>
+                <li>食品</li>
+                <li>个人护理</li>
+            </ul>
+        </div>
+    </menu>
+    <section>
+        <div class="container">
+            <div class="show">
+                <script type="text/html" id="moban">
+                    {{ each productsList}}
+                    <a href="#" onclick="toDetail({{$value.id}})">
+                        <figure>
+                            <img src="{{$value.image}}" alt="文件加载错误" width="276px" height="276px">
+                            <p>{{$value.title}}</p>
+                            <p><span>淘宝</span><span>包邮</span></p>
+                            <p><span>￥</span><span>{{$value.price}}</span>&nbsp;<span>{{$value.saleNum}}人已购买</span><span>三元券</span>
+                            </p>
+                        </figure>
+                    </a>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+    </section>
+    <div id="getMore">
+        <div class="box">查看更多</div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="top"> <img src="./image/logo.png" alt="" width="100px" height="100px">
+                <div class="middle">
+                    <p>熊猫优选</p>
+                    <p>年轻人购物首选</p>
+                    <p>购物领劵更省钱</p>
+                </div>
+                <div class="right">| 下载app</div>
+            </div>
+            <h5><img src="./image/jingcha.png" alt="" width="18px" height="18px">浙公安网备案 33010602009949号 | ICP备案号:
+                浙ICP备17012864号-1 | <img src="./image/police.png" alt="" width="16px" height="16px"> 证照信息</h5>
+        </div>
+    </footer>
+    <div class="bottom"><img src="./image/niubi.png" alt=""></div>
+    <aside>回到顶部</aside>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/index.js"></script>
+    <script></script>
+
+</body>
+
+</html>
