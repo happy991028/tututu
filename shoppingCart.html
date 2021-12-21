@@ -5,81 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>囊肿羞涩</title>
-    <link rel="stylesheet" href="css/cart.css" />
-    <link rel="stylesheet" href="css/shoppingCart.css" />
-    <script src="./js/jquery-2.2.4.js"></script>
-    <script type="text/javascript" src="./js/layer-master/src/layer.js"></script>
+    <title>囊中羞涩！</title>
+    <link rel="stylesheet" href="./css/shoppingCart.css">
 </head>
 <style>
-.header{
-height: 80px;
-display: flex;
-padding-top: 44px;
-justify-content: center;
-background: pink;
-font-size: 30px;
-}
-#cartTable{
-  margin: 0 auto;
-}
-#foot{
-  margin: 0 auto;
-}
-
-
+    
+    #j_cbAll{
+        margin-top: 35px;
+    }
+    h2{
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        padding-top: 20px;
+        background: pink;
+    }
+    #btn{
+        background: white;
+        border: 1px solid #6d6565;
+        font-size: 12px;
+        border-radius:4px ;
+        margin-left: 20px;
+    }
+ 
+    
 </style>
 
 <body>
-    <div class="header">
-        熊猫优选YYDS
+    <div class="container">
+        <div class="header">
+            熊猫优选YYDS
+
+        </div>
+        <div class="book-list">
+            <div class="thead">
+                <input type="checkbox" id="j_cbAll">
+                <span>商品图片</span>
+                <span>id</span>
+                <span>单价</span>
+                <span>数量</span>
+                <span>总价</span>
+                <span>操作</span>
+            </div>
+            <table id="j_tb">
+                <script type="text/html" id="textlist">
+                    {{each objproduct}}
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="{{$value.image}}" alt="shop03"></td>
+                        <td>{{$value.id}}</td>
+                        <td>￥{{$value.price}}</td>
+                        <td><input type="button" name="minus" value="-" ><input type="text" name="amount"
+                                value="{{$value.num}}"><input type="button" name="plus" value="+"></td>
+                        <td class="singleprice" width="100px">{{$value.singleprice}}</td>
+                        <td><a href="#">移入收藏</a><br><a href="#" class="delete-btn">删除</a></td>
+                    </tr>
+                    {{/each}}
+                </script>
+            </table>
+            <h2><input type="button" value="反选" id="btn"> 商品总价: <span id="totalPrice">￥0</span></h2>
+        </div>
+
+
 
     </div>
-    <table id="cartTable">
-        <thead>
-          <tr>
-            <th>
-              <label>
-                <input class="check-all check" type="checkbox" />&nbsp;全选</label>
-            </th>
-            <th>商品</th>
-            <th>单价</th>
-            <th>数量</th>
-            <th>小计</th>
-            <th>操作</th>
-          </tr>
-        </thead>
-        <tbody>
-    
-        </tbody>
-      </table>
-    
-      <div class="foot" id="foot">
-        <label class="fl select-all">
-          <input type="checkbox" class="check-all check" />&nbsp;全选</label>
-        <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
-        <div class="fr closing">结 算</div>
-        <div class="fr total">合计：￥
-          <span id="priceTotal">0.00</span>
-        </div>
-        <div class="fr selected" id="selected">已选商品
-          <span id="selectedTotal">0</span>件
-          <span class="arrow up">︽</span>
-          <span class="arrow down">︾</span>
-        </div>
-        <div class="selected-view">
-          <div id="selectedViewList" class="clearfix">
-            <!--<div><img src="images/1.jpg"><span>取消选择</span></div>-->
-          </div>
-          <span class="arrow">◆
-            <span>◆</span>
-          </span>
-        </div>
-      </div>
-      <script type="text/javascript" src="js/cart.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/template-web.js"></script>
-    <!-- <script src="./js/shoppingCart.js"></script> -->
+    <script src="./js/shoppingCart.js"></script>
 </body>
 
 </html>

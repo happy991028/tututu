@@ -78,6 +78,7 @@ nav .container {
 }
 nav .container ul {
   padding: 0;
+  background: #f6f6f6;
 }
 nav .container ul li {
   float: left;
@@ -87,11 +88,21 @@ nav .container ul li {
   color: white;
   text-align: center;
   line-height: 46px;
+  
+}
+nav .container ul li ul{
+  display: none;
 }
 nav .container ul li:hover {
   background-color: #fee44e;
-  color: #43240c;
+  color: #43240c ;
 }
+nav .container ul li a{
+  text-decoration: none !important;
+  color:white;
+}
+
+
 
 section {
   margin-bottom: 10px;
@@ -334,7 +345,7 @@ aside {
   height: 50px;
   background-color: #FFD800;
   position: fixed;
-  bottom: 30px;
+  bottom: 20%;
   right: 30px;
   text-align: center;
   line-height: 50px;
@@ -343,5 +354,28 @@ aside {
   cursor: pointer;
   display: none;
 }
+.main_nav {
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #fec07e;
+  text-align: center;
 
-/*# sourceMappingURL=productDetail.css.map */
+}
+
+
+#globalNav {
+  position: fixed;
+  top: 150px;
+  right: 30px;
+}
+
+#globalNav li a {
+  text-decoration: none;
+  color: #484848;
+  font-weight: 400;
+
+}

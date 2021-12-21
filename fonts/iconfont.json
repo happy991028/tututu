@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1060",
+      "name": "内衣",
+      "font_class": "neiyi",
+      "unicode": "f0083",
+      "unicode_decimal": 983171
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "3448",
+      "unicode_decimal": 13384
+    },
+    {
+      "icon_id": "6689",
+      "name": "母婴产品",
+      "font_class": "muyingchanpin",
+      "unicode": "3484",
+      "unicode_decimal": 13444
+    },
+    {
+      "icon_id": "15920",
+      "name": "天猫超市-零食",
+      "font_class": "tianmaochaoshilingshi",
+      "unicode": "f0040",
+      "unicode_decimal": 983104
+    },
+    {
+      "icon_id": "947088",
+      "name": "美妆",
+      "font_class": "meizhuang",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "5126065",
+      "name": "女装",
+      "font_class": "nvzhuang",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7095493",
+      "name": "服饰-男鞋",
+      "font_class": "fushi-nanxie",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "7864860",
+      "name": "手提包",
+      "font_class": "shoutibao",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "13497502",
+      "name": "家居",
+      "font_class": "jiaju",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

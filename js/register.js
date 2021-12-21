@@ -56,3 +56,12 @@ btn.addEventListener('click', e => {
         location.href = './login.html'
     }
 })
+
+
+
+function fn(params) {
+    let body = document.querySelector('body')
+// console.log(body)
+    body.style.background = '#f2f2f2'
+}
+fn()

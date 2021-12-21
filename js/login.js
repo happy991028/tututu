@@ -47,3 +47,10 @@ btn2.addEventListener('click', e => {
         location.href = './register.html'
     
 })
+
+function fn(params) {
+    let body = document.querySelector('body')
+console.log(body)
+    body.style.background = '#f2f2f2'
+}
+fn()

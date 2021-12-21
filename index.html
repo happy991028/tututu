@@ -6,21 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
-    <link rel="stylesheet" href="./css/9.9.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
 </head>
+<style>
+    #container {
+        height: 100px !important;
+    }
+ 
+</style>
+
 
 <body>
     <header id="header">
-        <div class="container">
-            <div class="left"><img src="./image/logo.png" alt="" width="75px" height="75px"></div>
+        <div class="container" id="container">
+            <div class="left" onmouseover="mOver(this)" onmouseout="normalImg(this)">
+                <img src="./image/logo.png" alt="" width="75px" height="75px">
+            </div>
             <div class="word">
                 <h3>&nbsp; 熊猫优选</h3>
                 <p>
                     XIONG MAO YOU XUAN
                 </p>
             </div>
-            <div class="middle"><img src="./image/放大镜.png" alt="" width="20px" height="20px"><input type="text"
-                    placeholder="搜索商品，发现更多优惠" ;><button type="button">搜索</button></div>
+
+
+            <div class="middle">
+                <img src="./image/放大镜.png" alt="" id="txt" width="20px" height="20px">
+                <input type="text"placeholder="搜索商品，发现更多优惠" ;>
+                <button type="button">搜索</button>
+            </div>
+            
+
+
             <div class="right"><span><img src="./image/two.png" alt="" width="40px" height="40px">
                     <p>全程包邮</p>
                 </span><span><img width="40px" height="40px" src="./image/three.png" alt="">
@@ -30,21 +49,100 @@
                 </span></div>
         </div>
     </header>
+
     <nav>
         <div class="container">
-            <ul>
-                <li>首页</li>
-                <li>9块9包邮</li>
-                <li>超值大额卷</li>
-                <li>降温急救穿搭</li>
+            <ul class="nav" id=nav>
+                <li>
+                    9.9￥
+                </li>
+                <li>
+                    买一送一
+                </li>
+
+                <li>
+                    不要钱
+                </li>
+                <li>
+                    免费送
+                </li>
+                <li>
+                    打折优惠
+                </li>
             </ul>
         </div>
+
     </nav>
-    <hgroup>
+    <div id="banner">
+        <div class="container" id="container">
+            <ul>
+                <li><span class="iconfont icon-neiyi"></span>&emsp;<span>内衣/袜子</span></li>
+                <li><span class="iconfont icon-shouji"></span>&emsp;<span>手机/数码</span></li>
+                <li><span class="iconfont icon-muyingchanpin"></span>&emsp;<span>母婴/幼儿</span></li>
+                <li><span class="iconfont icon-tianmaochaoshilingshi"></span>&emsp;<span>文娱/家居</span></li>
+                <li><span class="iconfont icon-meizhuang"></span>&emsp;<span>时尚/美妆</span></li>
+                <li><span class="iconfont icon-nvzhuang"></span>&emsp;<span>女装/女鞋</span></li>
+                <li><span class="iconfont icon-fushi-nanxie"></span>&emsp;<span>男装/男鞋</span></li>
+                <li><span class="iconfont icon-shoutibao"></span>&emsp;<span>手提/书包</span></li>
+                <li><span class="iconfont icon-jiaju"></span>&emsp;<span>装修/家居</span></li>
+            </ul>
+            <!-- 如果需要分页器 -->
+            <div class="middles" id="middles">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/banner1.png" width="660px" height="234px" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/banner2.png"  width="660px" height="234px" alt="">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <div class="lefts">
+                    <div class="lef">
+                        <p>降温急救穿搭</p>
+                        <p>速来抢购~</p>
+                        <p>go</p>
+
+                    </div>
+                    <div class="rig"><img src="./image/small1.png" width="125px" height="125px" alt=""></div>
+                </div>
+                <div class="rights">
+                    <div class="lef">
+                        <p>降温急救穿搭</p>
+                        <p>速来抢购~</p>
+                        <p>go</p>
+                    </div>
+                    <div class="rig"><img src="./image/small2.png" width="125px" height="125px" alt=""></div>
+                </div>
+            </div>
+            <div class="theright">
+                <div class="tope">
+                    <p>9块9包邮</p>
+                    <p>&emsp; 保你不吃亏</p>
+                    <h5 id="t"></h5>
+                    <!-- <div class="ritt"><img src="./image/small3.png" alt=""  width="100px" height="100px"></div> -->
+                </div>
+                <div class="bote">
+                    <div class="leff">
+                        <p> 扫码下载APP</p>
+                        <p>发现更多惊喜</p>
+                    </div>
+                    <div class="ritt"><img src="./image/small4.png" alt=""  width="100px" height="100px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <hgroup>
         <div class="container">
             <h3>9块9专区</h3>
         </div>
-    </hgroup>
+    </hgroup> -->
     <menu>
         <div class="container">
             <ul>
@@ -79,13 +177,15 @@
                 </script>
             </div>
         </div>
+
     </section>
     <div id="getMore">
         <div class="box">查看更多</div>
     </div>
     <footer>
         <div class="container">
-            <div class="top"> <img src="./image/logo.png" alt="" width="100px" height="100px">
+            <div class="top">
+                <img src="./image/logo.png" alt="" width="100px" height="100px">
                 <div class="middle">
                     <p>熊猫优选</p>
                     <p>年轻人购物首选</p>
@@ -97,12 +197,57 @@
                 浙ICP备17012864号-1 | <img src="./image/police.png" alt="" width="16px" height="16px"> 证照信息</h5>
         </div>
     </footer>
+
+    <!-- 左边导航 -->
+
+
+
+
+    <!-- 右边导航 -->
+    <ul id="globalNav">
+        <li class="main_nav"><a href="#">会员</a></li>
+        <li class="main_nav"><a href="./productDetail.html">商品详情</a></li>
+        <li class="main_nav"><a href="./register.html">注册</a></li>
+        <li class="main_nav"><a href="./login.html">登录</a></li>
+        <li class="main_nav"><a href="./shoppingCart.html" target="_parent">去购物车</a></li>
+    </ul>
+
     <div class="bottom"><img src="./image/niubi.png" alt=""></div>
+
     <aside>回到顶部</aside>
+
+    <script src="js/tools.js"></script>
     <script src="./js/template-web.js"></script>
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/index.js"></script>
-    <script></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script>
+        // let mySwiper = new Swiper('.swiper', {
+        //     loop: true, // 循环模式选项
+
+        //     // 如果需要分页器
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //     },
+
+        //     // 如果需要前进后退按钮
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+
+        //     // 如果需要滚动条
+        //     scrollbar: {
+        //         el: '.swiper-scrollbar',
+        //     },
+        // })
+
+        
+
+
+
+
+    </script>
 
 </body>
 
